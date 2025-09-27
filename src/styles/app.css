@@ -1,0 +1,15 @@
+.header-container {
+    background-color: grey;
+}
+
+.logo, .menu {
+    width: 30px;
+}
+
+.light-mode {
+    background-color: white;
+}
+
+.dark-mode {
+   background-color: grey; 
+}
