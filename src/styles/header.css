@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  background-color: #f0ebe5;
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.menu-hamburger {
+  position: absolute;
+  left: 20px;
+  @media screen and (min-width: 1728px) {
+    display: none;
+  }
+}
+
+.menu-desktop {
+  color: #0c474b;
+  font-size: 16px;
+  display: none;
+  @media screen and (min-width: 1728px) {
+    display: flex;
+    position: absolute;
+    left: 280px;
+    gap: 30px;
+  }
+}

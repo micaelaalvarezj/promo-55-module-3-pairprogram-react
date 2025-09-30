@@ -1,0 +1,208 @@
+.main-section {
+    height: 100vh;
+    text-align: center;
+    color: #0c474b;
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+        text-align: left;
+        padding-left: 150px;
+    }
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 400px;
+    @media screen and (min-width: 900px) {
+        font-size: 36px;
+        margin-right: 420px;
+    }
+    @media screen and (min-width: 1728px) {
+        margin-right: 1250px;
+    }
+}
+
+.button-buy-1, .button-buy-3 {
+    background-color: #0c474b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 50px 0 100px 0;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    @media screen and (min-width: 900px) {
+        margin-top: 5px;
+    }
+}
+
+.button-buy-1 > a , .button-buy-3 > a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-buy-1 > a:hover, .button-buy-3 > a:hover {
+    color: #ff975a
+}
+
+.benefits-section {
+    background-color: #f0ebe5;
+    color: #0c474b;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 1px;
+    @media screen and (min-width: 900px) {
+        padding: 1px 50px 70px 50px;
+    }
+    @media screen and (min-width: 1728px) {
+        padding: 1px 150px 70px 150px;
+    }
+}
+
+.benefits-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 50px 100px;
+    @media screen and (min-width: 1728px) {
+        font-size: 36px;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.benefit-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 150px 0 150px;
+    @media screen and (min-width: 900px) {
+        margin: 30px 30px 0 30px;
+    }
+    @media screen and (min-width: 1728px) {
+        margin: 30px 130px 0 130px;
+    }
+}
+
+.benefit-paragraph {
+    font-size: 16px;
+    margin: 10px 150px 30px 150px;
+    @media screen and (min-width: 900px) {
+        margin: 10px 40px 30px 40px;
+    }
+    @media screen and (min-width: 1728px) {
+        margin: 10px 130px 30px 130px;
+    }
+}
+
+.shipment-section {
+    background-color: #ff975a;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+.shipment-title, .enjoy-title {
+    font-size: 24px;
+    font-weight: 600;
+    @media screen and (min-width: 900px) {
+        font-size: 30px;
+    }
+    @media screen and (min-width: 1728px) {
+        font-size: 36px;
+    }
+}
+
+.button-buy-2 {
+    background-color: transparent;
+    color: white;
+    font-family: "Poppins";
+    border: none;
+    margin-top: 25px; 
+    font-size: 18px;
+    font-weight: 600;
+    a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #f0ebe5;
+    text-decoration-thickness: 2px;
+    }
+}
+
+.button-buy-2:hover {
+    font-size: 24px;
+}
+
+.enjoy-section {
+    background-color: #f0ebe5;
+    color: #0c474b;
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+        padding-top: 40px;
+    }
+    @media screen and (min-width: 1728px) {
+        text-align: left;
+        flex-direction: row;
+        padding-top: 0;
+    }
+}
+
+.enjoy-container {
+    @media screen and (min-width: 1728px) {
+        width: 50%;
+    }
+}
+
+.enjoy-title {
+    @media screen and (min-width: 1728px) {
+        margin: 160px 200px 0 250px;
+    }
+}
+
+.enjoy-paragraph {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+    @media screen and (min-width: 900px) {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    @media screen and (min-width: 1728px) {
+        font-size: 16px;
+        margin: 10px 320px 10px 250px;
+    }
+}
+
+.button-buy-3 {
+    @media screen and (min-width: 1728px) {
+        margin: 10px 0 0 250px;
+    }
+}
+
+.bath-image-box {
+    width: 100%;
+    @media screen and (min-width: 1728px) {
+        width: 50%;
+    }
+}
+
+.bath-image {
+    width: 100%;
+    display: block;
+}

@@ -1,5 +1,8 @@
 import 'react'
 import '../styles/app.css'
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 import { useState } from 'react'
 
 const App = () => {
@@ -30,6 +33,14 @@ const handleIncrement = () => {
 
   return (
     <>
+
+    <Header />
+
+    <Main />
+
+    <Footer />
+
+
     <div className= {mode}>
         <button onClick={handleClickMode}>{mode === "light" ? "Activar modo oscuro" : "Desactivar modo oscuro"}</button>
         <p>{mode === "dark" ? "Tienes activado el modo oscuro" : ""}</p>
@@ -39,6 +50,7 @@ const handleIncrement = () => {
         <button onClick={handleReset}>Reset</button>
     </div>
     </>
+
   )
 }
 
