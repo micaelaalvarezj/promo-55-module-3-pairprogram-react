@@ -1,33 +1,42 @@
 import 'react'
-import logo from '../images/logo.png'
-import menu from '../images/menu-icon.png'
 import '../styles/app.css'
 import { useState } from 'react'
 
 const App = () => {
-  const [dark, setDark] = useState("");
+  const [count, setCount] = useState(0);
+  const [mode, setMode] = useState("light");
 
-  const handleClick = (event) => {
-    console.log("Has hecho click");
-  };
+const handleIncrement = () => {
+    return setCount(count + 1);
+  }
+
+    const handleReduce = () => {
+    if (count > 0) {
+    return setCount(count - 1);
+    }
+  }
+
+  const handleReset = () => {
+    return setCount(0);
+  }
+
+  const handleClickMode = () => {
+    if (mode === "light") {
+      return setMode("dark");
+    } else {
+      return setMode("light");
+    }
+  }
 
   return (
     <>
-    <header className="header-container"> 
-        <img src={logo} alt="Logo Spotify" className="logo"/>
-        <img src={menu} alt="Icono menú" className="menu"/>
-        <ul class="links">
-            <li><a href="">Premium</a></li>
-            <li><a href="">Ayuda</a></li>
-            <li><a href="">Descargar</a></li>
-            <li><a href="">|</a></li>
-            <li><a href="">Registrarse</a></li>
-            <li><a href="">Iniciar sesión</a></li>
-        </ul>
-    </header>
-    <div className="light-mode">
-      <button className="dark-name-button" onClick={handleClick}>Des/activar modo oscuro</button>
-      <p className="dark-mode-text">Tienes {dark}activado el modo oscuro</p>
+    <div className= {mode}>
+        <button onClick={handleClickMode}>{mode === "light" ? "Activar modo oscuro" : "Desactivar modo oscuro"}</button>
+        <p>{mode === "dark" ? "Tienes activado el modo oscuro" : ""}</p>
+        <p>Contador: {count}</p>
+        <button onClick={handleIncrement}>Incrementar contador</button>
+        <button onClick={handleReduce}>Reducir contador</button>
+        <button onClick={handleReset}>Reset</button>
     </div>
     </>
   )
